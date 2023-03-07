@@ -1,0 +1,21 @@
+{
+  "name": "filesorter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "FussuChalice",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^23.1.2",
+    "electron-packager": "^17.1.1"
+  },
+  "dependencies": {
+    "ejs-electron": "^2.1.1",
+    "electron-builder": "^24.0.0",
+    "jquery": "^3.6.3"
+  }
+}

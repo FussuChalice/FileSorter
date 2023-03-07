@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>HandSorter</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- <button id="fileInput">Hello</button> -->
+
+    <div id="container">
+      <div id="drop-zone">
+        <input id="upload-button" type="file" multiple/>
+        <span id="upload-text">Click folder or Drag and Drop files.</span>
+      </div>
+      <div id="type-radios">
+        <input type="radio" id="radio_date_of_creating" value="rdoc" name="rad-type" checked/>
+        <label for="radio_date_of_creating">Sort by date of creating</label>
+        <br/>
+        <input type="radio" id="radio_author" value="ra" name="rad-type"/>
+        <label for="radio_author">Sort by author</label>
+      </div>
+      <div id="button-start">
+        Start
+      </div>
+
+      <a href="https://www.buymeacoffee.com/mmakaliuk" id="buy-me-a-coffe-link"><img src="images/bmc-button.png" alt="buy-me-a-coffe" width="200"></a>
+    </div>
+
+    <div id="finish-directory-path">
+      <div id="close">
+        <svg width="20px" height="20px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="2.4"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.048"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z" fill="#000000"></path></g></svg>
+      </div>
+      <span id="finishText">Select folder to save files</span>
+      <input id="finishButton" type="file" webkitdirectory/>
+      <span id="FinButton">Finish</span>
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+    <script src="index.js"></script>
+  </body>
+</html>
